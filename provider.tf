@@ -2,6 +2,19 @@ variable "pm_api_url" {
   type = string
 }
 
+variable "cloudinit_template_name" {
+  type = string
+}
+
+variable "proxmox_node" {
+  type = string
+}
+
+variable "ssh_key" {
+  type = string
+  sensitive = true
+}
+
 terraform {
   required_providers {
     proxmox = {
